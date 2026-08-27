@@ -20,7 +20,7 @@ function reciboDe(prestamo: Prestamo): string {
     return `Recibo para el socio: ${prestamo.socio.toUpperCase()} con multa de: ${calcularMulta(prestamo)}`;
 }
 
-let prestamo: Prestamo = {multa: 250, ejemplar: 15, folio: "F001", estado: 'activo', socio: 'Juan Pérez'}; 
+const prestamo: Prestamo ={multa: 250, ejemplar: 15, folio: "F001", estado: 'activo', socio: 'Juan Pérez'}; 
 
-console.log("Tu multa es de ", calcularMulta(prestamo));    
+console.log("Tu multa es de ", calcularMulta(prestamo));   
 console.log(reciboDe(prestamo));
